@@ -5,7 +5,6 @@
 int main(int argc, char **argv)
 {
 	cout << "Starting engine..." << endl;
-	start_physics(argc,argv);
-	start_graphic(argc,argv);
+	start_engine(argc,argv);
 	return 0;
 }

@@ -1,4 +1,14 @@
-#include "Box2D/Box2D.h"
+#include <Box2D/Box2D.h>
 
-void draw_polygon(const b2Vec2* vertices,int32 vertexCount,const b2Color& color);
-int start_physics(int argc,char **argv);
+extern b2Body *groundBody,*body;
+
+extern b2Vec2 gravity;
+extern b2World world;
+extern b2BodyDef groundBodyDef,bodyDef;
+extern b2PolygonShape groundBox,dynamicBox;
+extern b2FixtureDef fixtureDef;
+
+extern float32 timeStep;
+extern int32 velocityIterations,positionIterations;
+
+void initBOX2D(b2World *wrd);
