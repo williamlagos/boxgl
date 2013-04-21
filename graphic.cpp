@@ -25,7 +25,7 @@ void define_direction()
 {
     world.Step(timeStep,1, positionIterations);
     b2Vec2 position = body->GetPosition();
-    printf("%3.2f - %3.2f",position.x,position.y);
+    //printf("%3.2f - %3.2f",position.x,position.y);
     if(direction){ 
         x = 0.0001f*position.x;
         y = 0.0001f*position.y;

@@ -17,7 +17,5 @@ find_package(GLUT REQUIRED)
 set(GRAPHICS_LIBRARIES ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} ${Box2D_LIBRARIES})
 set(GRAPHICS_SOURCES physics.cpp graphic.cpp main.cpp)
 
-set(CMAKE_EXE_LINKER_FLAGS static)
-
 add_executable(graphics ${GRAPHICS_SOURCES})
 target_link_libraries(graphics ${GRAPHICS_LIBRARIES})
