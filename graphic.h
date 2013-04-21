@@ -1,6 +1,11 @@
 #include <GLUT/glut.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
+#ifdef _WIN32
+ #include <GL/gl.h>
+ #include <GL/glu.h>
+#else
+ #include <OpenGL/gl.h>
+ #include <OpenGL/glu.h>
+#endif
 #include <Box2D/Box2D.h>
 #include <time.h>
 
