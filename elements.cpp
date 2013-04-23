@@ -6,7 +6,7 @@ using namespace std;
 void load_json(const char* name)
 {
 	std::ifstream stream;
-	stream.open("C:\boxgl\Debug\elements.json",ifstream::in);
+	stream.open("C:\\boxgl\\Debug\\elements.json",ifstream::in);
 	cout << stream.fail() << endl;
 	std::string buffer;
 	if(stream.is_open()){

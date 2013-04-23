@@ -1,5 +1,5 @@
 #include <GLUT/glut.h>
-#ifdef _WIN32
+#ifndef __APPLE__
  #include <GL/gl.h>
  #include <GL/glu.h>
 #else

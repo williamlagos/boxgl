@@ -55,9 +55,14 @@ typedef unsigned short wchar_t;
 
 #endif
 
-#include <GL/gl.h>
-#include <GL/glu.h>
-
+#ifndef __APPLE__
+  #include <GL/gl.h>
+  #include <GL/glu.h>
+#else
+  #include <OpenGL/gl.h>
+  #include <OpenGL/glu.h>
+#endif
+ 
 /* define APIENTRY and CALLBACK to null string if we aren't on Win32 */
 #if !defined(_WIN32)
 #define APIENTRY
