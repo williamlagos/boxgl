@@ -1,5 +1,6 @@
 #include "physics.h"
 #include "graphic.h"
+#include "elements.h"
 #include "utils.h"
 
 int main_window;
@@ -39,6 +40,7 @@ void define_direction()
 
 void display ( void )
 {
+    load_json("elements.json");
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     glTranslatef(x,y,z);  
     glColor3f(1.0,0.0,0.0); 

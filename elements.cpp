@@ -1,31 +1,23 @@
 #include "elements.h"
-#include <iostream>
-#include <string>
 using namespace std;
 
 void load_json(const char* name)
 {
 	std::ifstream stream;
-	stream.open("C:\\boxgl\\Debug\\elements.json",ifstream::in);
-	cout << stream.fail() << endl;
-	std::string buffer;
+	stream.open("elements.json",ifstream::in);
+	std::string line,buffer;
 	if(stream.is_open()){
-		cout << "ABC" << endl;
 		while(stream.good()){
-			getline(stream,buffer);
-			printf(buffer.c_str());
+			getline(stream,line);
+			buffer.append(line);
 		}
 		stream.close();
 	}
-	/*if(!fs) puts("Arquivo aberto incorretamente");
-	fs >> buffer;
-	JSONNODE* node = json_parse(buffer.c_str());
-    for(JSONNODE_ITERATOR i = json_begin(node); 
-		i != json_end(node); ++i){
-      if(i == JSON_NULL) break;
-      else if (json_type(*i) == JSON_NODE) continue;
-      json_char *node_name = json_name(*i);
-	  printf(node_name);
-      json_free(node_name);
-    }*/
+	JSONNODE* node = json_parse_unformatted(buffer.c_str());
+	JSONNODE_ITERATOR i = json_begin(node);
+	while(i != json_end(node)){
+		if(i == JSON_NULL) break;
+		else if(json_type(*i) == JSON_NODE) continue;
+		printf("%s",json_name(*i)); i++;
+	}
 }
