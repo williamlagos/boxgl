@@ -7,8 +7,8 @@ int main_window;
 int width,height;
 int counter = 0;
 bool direction = true;
-float x = 0.0005f;
-float y = 0.0005f;
+float x = 0.005f;
+float y = 0.005f;
 float z = 0.0f;
 
 void reshape(int w, int h)
@@ -28,11 +28,13 @@ void define_direction()
     b2Vec2 position = body->GetPosition();
     //printf("%3.2f - %3.2f",position.x,position.y);
     if(direction){ 
-        x = 0.0001f*position.x;
-        y = 0.0001f*position.y;
+        x = 0.001f*position.x;
+        y = 0.001f*position.y;
+		//z = 0.001f;
     }else{
-        x = -0.0001f*position.x;
-        y = -0.0001f*position.y;
+        x = -0.001f*position.x;
+        y = -0.001f*position.y;
+		//z = -0.001f;
     }
     counter = 0;
     direction = !direction;
@@ -40,15 +42,15 @@ void define_direction()
 
 void display ( void )
 {
-    load_json("elements.json");
+    //load_json("elements.json");
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     glTranslatef(x,y,z);  
-    glColor3f(1.0,0.0,0.0); 
+    glColor3f(0.7,0.3,0.0); 
     glPointSize(10.0);
     glBegin(GL_TRIANGLES);
-      glVertex2f(-0.8f,-0.8f);
-      glVertex2f(0.0f,0.8f);
-      glVertex2f(0.8f,-0.8f);
+      glVertex3f(-0.9f,-0.9f,0.0f);
+      glVertex3f(0.0f,0.7f,0.0f);
+      glVertex3f(0.8f,-0.8f,0.0f);
     glEnd();
     counter++;
     if(counter == 1000) define_direction();
