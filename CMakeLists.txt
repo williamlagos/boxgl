@@ -2,7 +2,13 @@ project(BoxGL)
 
 cmake_minimum_required(VERSION 2.8)
 
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
+add_subdirectory(box2d)
+add_subdirectory(jsonrpc)
+
+if(WIN32)
+	LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/box2d/Box2D/Debug)
+endif()
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 find_package(OpenGL REQUIRED)

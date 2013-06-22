@@ -1,0 +1,105 @@
+10
+
+dir
+0
+svn://pong/Code/aer/extern/JsonRpc/libjson
+svn://pong
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+683595d9-5441-4540-9dfb-414f9168b9c2
+
+License.txt
+file
+
+
+
+add
+
+Source
+dir
+
+
+
+add
+
+Documentation.pdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+libjson.vcproj
+file
+
+
+
+add
+
+libjson.h
+file
+
+
+
+add
+
+Getting Started
+dir
+
+
+
+add
+
+TestSuite.zip
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+JSONOptions.h
+file
+
+
+
+add
+
+makefile
+file
+
+
+
+add
+

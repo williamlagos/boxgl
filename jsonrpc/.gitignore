@@ -1,0 +1,5 @@
+Objects_static
+Makefile
+*.cmake
+*.a
+*~

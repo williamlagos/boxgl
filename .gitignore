@@ -11,3 +11,11 @@
 *.lai
 *.la
 *.a
+
+*.exe
+*.dll
+*.lib
+*.pdb
+*.sln
+*.vcxproj*
+
