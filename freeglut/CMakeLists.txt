@@ -1,3 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(libfreeglut)
+
 add_definitions( -DFREEGLUT_EXPORTS -DFREEGLUT_STATIC -D_CRT_SECURE_NO_WARNINGS )
 
 if(APPLE)
