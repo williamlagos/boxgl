@@ -7,14 +7,13 @@ add_subdirectory(json)
 add_subdirectory(glfw)
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/box2d)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/jsonrpc/json)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/freeglut)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/json/json)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/glfw)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-find_package(GLUT REQUIRED)
 find_package(OpenGL REQUIRED)
 
-set(GRAPHICS_LIBRARIES ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} glui Box2D json)
+set(GRAPHICS_LIBRARIES ${OPENGL_LIBRARIES} glfw Box2D json)
 set(GRAPHICS_SOURCES elements.cpp physics.cpp graphics.cpp main.cpp)
 
 add_executable(graphics ${GRAPHICS_SOURCES})

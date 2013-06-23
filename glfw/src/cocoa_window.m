@@ -73,10 +73,7 @@ static float transformY(float y)
 //
 static NSRect convertRectToBacking(_GLFWwindow* window, NSRect contentRect)
 {
-    if ([window->ns.view respondsToSelector:@selector(convertRectToBacking:)])
-        return [window->ns.view convertRectToBacking:contentRect];
-    else
-        return contentRect;
+    return contentRect;
 }
 
 
