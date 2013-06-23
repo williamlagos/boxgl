@@ -6,177 +6,177 @@
 
 #IncludeRegexTransform: 
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONChildren.cpp
+/Users/SV/BoxGL/json/json/src/JSONChildren.cpp
 JSONChildren.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONChildren.h
+/Users/SV/BoxGL/json/json/src/JSONChildren.h
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONDebug.cpp
+/Users/SV/BoxGL/json/json/src/JSONDebug.cpp
 JSONDebug.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONDebug.h
+/Users/SV/BoxGL/json/json/src/JSONDebug.h
 iostream
 -
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONIterators.cpp
+/Users/SV/BoxGL/json/json/src/JSONIterators.cpp
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONMemory.cpp
+/Users/SV/BoxGL/json/json/src/JSONMemory.cpp
 JSONMemory.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONMemory.h
+/Users/SV/BoxGL/json/json/src/JSONMemory.h
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 JSONStream.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONStream.h
+/Users/SV/BoxGL/json/json/src/JSONStream.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.cpp
+/Users/SV/BoxGL/json/json/src/JSONNode.cpp
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode_Mutex.cpp
+/Users/SV/BoxGL/json/json/src/JSONNode_Mutex.cpp
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 map
 -
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONStream.cpp
+/Users/SV/BoxGL/json/json/src/JSONStream.cpp
 JSONStream.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONStream.h
+/Users/SV/BoxGL/json/json/src/JSONStream.h
 JSONWorker.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.h
+/Users/SV/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONValidator.cpp
+/Users/SV/BoxGL/json/json/src/JSONValidator.cpp
 JSONValidator.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONValidator.h
+/Users/SV/BoxGL/json/json/src/JSONValidator.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.cpp
+/Users/SV/BoxGL/json/json/src/JSONWorker.cpp
 JSONWorker.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.h
+/Users/SV/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWriter.cpp
+/Users/SV/BoxGL/json/json/src/JSONWriter.cpp
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.h
+/Users/SV/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/JSON_Base64.cpp
+/Users/SV/BoxGL/json/json/src/JSON_Base64.cpp
 JSON_Base64.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSON_Base64.h
+/Users/SV/BoxGL/json/json/src/JSON_Base64.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/internalJSONNode.cpp
+/Users/SV/BoxGL/json/json/src/internalJSONNode.cpp
 internalJSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/internalJSONNode.h
+/Users/SV/BoxGL/json/json/src/internalJSONNode.h
 NumberToString.h
-/Users/SV/BoxGL/jsonrpc/json/src/NumberToString.h
+/Users/SV/BoxGL/json/json/src/NumberToString.h
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.h
+/Users/SV/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/jsonrpc/json/src/libjson.cpp
+/Users/SV/BoxGL/json/json/src/libjson.cpp
 libjson.h
-/Users/SV/BoxGL/jsonrpc/json/src/libjson.h
+/Users/SV/BoxGL/json/json/src/libjson.h
 JSONNode.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONNode.h
+/Users/SV/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONWorker.h
+/Users/SV/BoxGL/json/json/src/JSONWorker.h
 JSONValidator.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONValidator.h
+/Users/SV/BoxGL/json/json/src/JSONValidator.h
 JSONStream.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSONStream.h
+/Users/SV/BoxGL/json/json/src/JSONStream.h
 stdexcept
 -
 JSON_Base64.h
-/Users/SV/BoxGL/jsonrpc/json/src/JSON_Base64.h
+/Users/SV/BoxGL/json/json/src/JSON_Base64.h
 
-jsonrpc/json/include/GNU_C.h
+json/json/include/GNU_C.h
 
-jsonrpc/json/include/JSONChildren.h
+json/json/include/JSONChildren.h
 JSONMemory.h
-jsonrpc/json/include/JSONMemory.h
+json/json/include/JSONMemory.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 JSONDefs.h
-jsonrpc/json/include/JSONDefs.h
+json/json/include/JSONDefs.h
 string
 -
 
-jsonrpc/json/include/JSONDefs.h
+json/json/include/JSONDefs.h
 JSONOptions.h
-jsonrpc/json/include/JSONOptions.h
+json/json/include/JSONOptions.h
 Unknown_C.h
-jsonrpc/json/include/Unknown_C.h
+json/json/include/Unknown_C.h
 GNU_C.h
-jsonrpc/json/include/GNU_C.h
+json/json/include/GNU_C.h
 Visual_C.h
-jsonrpc/json/include/Visual_C.h
+json/json/include/Visual_C.h
 Strings_Defs.h
-jsonrpc/json/include/Strings_Defs.h
+json/json/include/Strings_Defs.h
 
-jsonrpc/json/include/JSONMemory.h
+json/json/include/JSONMemory.h
 cstdlib
 -
 cstring
 -
 JSONOptions.h
-jsonrpc/json/include/JSONOptions.h
+json/json/include/JSONOptions.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 map
 -
 
-jsonrpc/json/include/JSONNode.h
+json/json/include/JSONNode.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 internalJSONNode.h
-jsonrpc/json/include/internalJSONNode.h
+json/json/include/internalJSONNode.h
 stdexcept
 -
 cstdarg
 -
 JSON_Base64.h
-jsonrpc/json/include/JSON_Base64.h
+json/json/include/JSON_Base64.h
 cstdio
 -
 
-jsonrpc/json/include/JSONOptions.h
+json/json/include/JSONOptions.h
 
-jsonrpc/json/include/JSONStream.h
+json/json/include/JSONStream.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 JSONMemory.h
-jsonrpc/json/include/JSONMemory.h
+json/json/include/JSONMemory.h
 
-jsonrpc/json/include/JSONValidator.h
+json/json/include/JSONValidator.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 
-jsonrpc/json/include/JSONWorker.h
+json/json/include/JSONWorker.h
 JSONNode.h
-jsonrpc/json/include/JSONNode.h
+json/json/include/JSONNode.h
 
-jsonrpc/json/include/JSON_Base64.h
+json/json/include/JSON_Base64.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 string
 -
 
-jsonrpc/json/include/NumberToString.h
+json/json/include/NumberToString.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 JSONMemory.h
-jsonrpc/json/include/JSONMemory.h
+json/json/include/JSONMemory.h
 cstdio
 -
 cmath
 -
 
-jsonrpc/json/include/Strings_Defs.h
+json/json/include/Strings_Defs.h
 JSONOptions.h
-jsonrpc/json/include/JSONOptions.h
+json/json/include/JSONOptions.h
 cwchar
 -
 string
@@ -188,33 +188,33 @@ string
 string.h
 -
 
-jsonrpc/json/include/Unknown_C.h
+json/json/include/Unknown_C.h
 
-jsonrpc/json/include/Visual_C.h
+json/json/include/Visual_C.h
 
-jsonrpc/json/include/internalJSONNode.h
+json/json/include/internalJSONNode.h
 JSONDebug.h
-jsonrpc/json/include/JSONDebug.h
+json/json/include/JSONDebug.h
 JSONChildren.h
-jsonrpc/json/include/JSONChildren.h
+json/json/include/JSONChildren.h
 JSONMemory.h
-jsonrpc/json/include/JSONMemory.h
+json/json/include/JSONMemory.h
 climits
 -
 
-jsonrpc/json/include/libjson.h
+json/json/include/libjson.h
 JSONDefs.h
-jsonrpc/json/include/JSONDefs.h
+json/json/include/JSONDefs.h
 Source/JSONNode.h
-jsonrpc/json/include/Source/JSONNode.h
+json/json/include/Source/JSONNode.h
 Source/JSONWorker.h
-jsonrpc/json/include/Source/JSONWorker.h
+json/json/include/Source/JSONWorker.h
 Source/JSONValidator.h
-jsonrpc/json/include/Source/JSONValidator.h
+json/json/include/Source/JSONValidator.h
 Source/JSONStream.h
-jsonrpc/json/include/Source/JSONStream.h
+json/json/include/Source/JSONStream.h
 Source/JSON_Base64.h
-jsonrpc/json/include/Source/JSON_Base64.h
+json/json/include/Source/JSON_Base64.h
 stdexcept
 -
 

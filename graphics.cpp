@@ -56,16 +56,16 @@ void display ( void )
     counter++;
     if(counter == 1000) define_direction();
     glFlush();
-    glutSwapBuffers();
+    //glutSwapBuffers();
 }
 
 void idle()
 {
-    static int prev_time = glutGet(GLUT_ELAPSED_TIME);
+    /*static int prev_time = glutGet(GLUT_ELAPSED_TIME);
     int curr_time = glutGet(GLUT_ELAPSED_TIME);
     int elapsed_time = curr_time - prev_time;
     prev_time = curr_time;
-    glutPostRedisplay();
+    glutPostRedisplay();*/
 }
 
 void initGL(void)
@@ -85,22 +85,22 @@ void initGL(void)
 
 void initGLUT(int argc, char** argv)
 {
-    glutInit(&argc, argv);
+    /*glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH | GLUT_STENCIL); // display mode
     glutInitWindowSize(width,height);
     glutInitWindowPosition(0,0);
     main_window = glutCreateWindow("BoxGL");
     glutDisplayFunc(display);
     glutIdleFunc(idle);
-    glutReshapeFunc(reshape);
+    glutReshapeFunc(reshape);*/
 }
 
 int start_engine(int argc, char** argv)
 {
     srand(time(0));
-    initGLUT(argc, argv);
+    //initGLUT(argc, argv);
     initGL();
     initBOX2D(&world);
-    glutMainLoop();
+    //glutMainLoop();
     return 0;
 }

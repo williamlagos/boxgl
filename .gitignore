@@ -20,8 +20,13 @@
 *.sln
 *.vcxproj*
 
+# Apple XCode
+*.xcodeproj
+*.build
+
 # CMake
 *.cmake
 CMakeFiles*
 CMakeCache*
+CMakeScripts*
 Makefile

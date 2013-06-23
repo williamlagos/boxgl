@@ -2,6 +2,8 @@ project(BoxGL)
 
 cmake_minimum_required(VERSION 2.8)
 
+set(CMAKE_XCODE_ATTRIBUTE_GCC_VERSION "com.apple.compilers.llvmgcc42")
+
 add_subdirectory(box2d)
 add_subdirectory(json)
 add_subdirectory(glfw)

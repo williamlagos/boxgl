@@ -2,6 +2,9 @@ project(GLFW C)
 
 cmake_minimum_required(VERSION 2.8)
 
+set(CMAKE_CXX_COMPILER_WORKS TRUE)
+set(CMAKE_C_COMPILER_WORKS TRUE)
+
 set(GLFW_VERSION_MAJOR "3")
 set(GLFW_VERSION_MINOR "0")
 set(GLFW_VERSION_PATCH "1")
@@ -64,7 +67,7 @@ elseif (_GLFW_USE_GLESV2)
     find_package(GLESv2 REQUIRED)
 endif()
 
-find_package(Threads REQUIRED)
+#find_package(Threads REQUIRED)
 
 #--------------------------------------------------------------------
 # Enable all warnings on GCC, regardless of OS
