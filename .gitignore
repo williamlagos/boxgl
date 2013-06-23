@@ -12,6 +12,7 @@
 *.la
 *.a
 
+# Microsoft Visual Studio
 *.exe
 *.dll
 *.lib
@@ -19,3 +20,8 @@
 *.sln
 *.vcxproj*
 
+# CMake
+*.cmake
+CMakeFiles*
+CMakeCache*
+Makefile
