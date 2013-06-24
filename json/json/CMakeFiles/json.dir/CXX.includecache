@@ -6,89 +6,89 @@
 
 #IncludeRegexTransform: 
 
-/Users/SV/BoxGL/json/json/src/JSONChildren.cpp
+/Developer/BoxGL/json/json/src/JSONChildren.cpp
 JSONChildren.h
-/Users/SV/BoxGL/json/json/src/JSONChildren.h
+/Developer/BoxGL/json/json/src/JSONChildren.h
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/json/json/src/JSONDebug.cpp
+/Developer/BoxGL/json/json/src/JSONDebug.cpp
 JSONDebug.h
-/Users/SV/BoxGL/json/json/src/JSONDebug.h
+/Developer/BoxGL/json/json/src/JSONDebug.h
 iostream
 -
 
-/Users/SV/BoxGL/json/json/src/JSONIterators.cpp
+/Developer/BoxGL/json/json/src/JSONIterators.cpp
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/json/json/src/JSONMemory.cpp
+/Developer/BoxGL/json/json/src/JSONMemory.cpp
 JSONMemory.h
-/Users/SV/BoxGL/json/json/src/JSONMemory.h
+/Developer/BoxGL/json/json/src/JSONMemory.h
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 JSONStream.h
-/Users/SV/BoxGL/json/json/src/JSONStream.h
+/Developer/BoxGL/json/json/src/JSONStream.h
 
-/Users/SV/BoxGL/json/json/src/JSONNode.cpp
+/Developer/BoxGL/json/json/src/JSONNode.cpp
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 
-/Users/SV/BoxGL/json/json/src/JSONNode_Mutex.cpp
+/Developer/BoxGL/json/json/src/JSONNode_Mutex.cpp
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 map
 -
 
-/Users/SV/BoxGL/json/json/src/JSONStream.cpp
+/Developer/BoxGL/json/json/src/JSONStream.cpp
 JSONStream.h
-/Users/SV/BoxGL/json/json/src/JSONStream.h
+/Developer/BoxGL/json/json/src/JSONStream.h
 JSONWorker.h
-/Users/SV/BoxGL/json/json/src/JSONWorker.h
+/Developer/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/json/json/src/JSONValidator.cpp
+/Developer/BoxGL/json/json/src/JSONValidator.cpp
 JSONValidator.h
-/Users/SV/BoxGL/json/json/src/JSONValidator.h
+/Developer/BoxGL/json/json/src/JSONValidator.h
 
-/Users/SV/BoxGL/json/json/src/JSONWorker.cpp
+/Developer/BoxGL/json/json/src/JSONWorker.cpp
 JSONWorker.h
-/Users/SV/BoxGL/json/json/src/JSONWorker.h
+/Developer/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/json/json/src/JSONWriter.cpp
+/Developer/BoxGL/json/json/src/JSONWriter.cpp
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/json/json/src/JSONWorker.h
+/Developer/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/json/json/src/JSON_Base64.cpp
+/Developer/BoxGL/json/json/src/JSON_Base64.cpp
 JSON_Base64.h
-/Users/SV/BoxGL/json/json/src/JSON_Base64.h
+/Developer/BoxGL/json/json/src/JSON_Base64.h
 
-/Users/SV/BoxGL/json/json/src/internalJSONNode.cpp
+/Developer/BoxGL/json/json/src/internalJSONNode.cpp
 internalJSONNode.h
-/Users/SV/BoxGL/json/json/src/internalJSONNode.h
+/Developer/BoxGL/json/json/src/internalJSONNode.h
 NumberToString.h
-/Users/SV/BoxGL/json/json/src/NumberToString.h
+/Developer/BoxGL/json/json/src/NumberToString.h
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/json/json/src/JSONWorker.h
+/Developer/BoxGL/json/json/src/JSONWorker.h
 
-/Users/SV/BoxGL/json/json/src/libjson.cpp
+/Developer/BoxGL/json/json/src/libjson.cpp
 libjson.h
-/Users/SV/BoxGL/json/json/src/libjson.h
+/Developer/BoxGL/json/json/src/libjson.h
 JSONNode.h
-/Users/SV/BoxGL/json/json/src/JSONNode.h
+/Developer/BoxGL/json/json/src/JSONNode.h
 JSONWorker.h
-/Users/SV/BoxGL/json/json/src/JSONWorker.h
+/Developer/BoxGL/json/json/src/JSONWorker.h
 JSONValidator.h
-/Users/SV/BoxGL/json/json/src/JSONValidator.h
+/Developer/BoxGL/json/json/src/JSONValidator.h
 JSONStream.h
-/Users/SV/BoxGL/json/json/src/JSONStream.h
+/Developer/BoxGL/json/json/src/JSONStream.h
 stdexcept
 -
 JSON_Base64.h
-/Users/SV/BoxGL/json/json/src/JSON_Base64.h
+/Developer/BoxGL/json/json/src/JSON_Base64.h
 
 json/json/include/GNU_C.h
 

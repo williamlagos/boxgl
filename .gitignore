@@ -25,6 +25,8 @@
 *.build
 
 # CMake
+Release
+Debug
 *.cmake
 CMakeFiles*
 CMakeCache*

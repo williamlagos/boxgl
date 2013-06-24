@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-11.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/SV/BoxGL
+CMAKE_SOURCE_DIR = /Developer/BoxGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/SV/BoxGL
+CMAKE_BINARY_DIR = /Developer/BoxGL
 
 # Include any dependencies generated for this target.
 include json/json/CMakeFiles/json.dir/depend.make
@@ -54,17 +54,17 @@ include json/json/CMakeFiles/json.dir/flags.make
 
 json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o: json/json/src/internalJSONNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/internalJSONNode.cpp.o -c /Users/SV/BoxGL/json/json/src/internalJSONNode.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/internalJSONNode.cpp.o -c /Developer/BoxGL/json/json/src/internalJSONNode.cpp
 
 json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/internalJSONNode.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/internalJSONNode.cpp > CMakeFiles/json.dir/src/internalJSONNode.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/internalJSONNode.cpp > CMakeFiles/json.dir/src/internalJSONNode.cpp.i
 
 json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/internalJSONNode.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/internalJSONNode.cpp -o CMakeFiles/json.dir/src/internalJSONNode.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/internalJSONNode.cpp -o CMakeFiles/json.dir/src/internalJSONNode.cpp.s
 
 json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o.requires
@@ -77,17 +77,17 @@ json/json/CMakeFiles/json.dir/src/internalJSONNode.cpp.o.provides.build: json/js
 
 json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o: json/json/src/JSON_Base64.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSON_Base64.cpp.o -c /Users/SV/BoxGL/json/json/src/JSON_Base64.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSON_Base64.cpp.o -c /Developer/BoxGL/json/json/src/JSON_Base64.cpp
 
 json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSON_Base64.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSON_Base64.cpp > CMakeFiles/json.dir/src/JSON_Base64.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSON_Base64.cpp > CMakeFiles/json.dir/src/JSON_Base64.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSON_Base64.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSON_Base64.cpp -o CMakeFiles/json.dir/src/JSON_Base64.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSON_Base64.cpp -o CMakeFiles/json.dir/src/JSON_Base64.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o.requires
@@ -100,17 +100,17 @@ json/json/CMakeFiles/json.dir/src/JSON_Base64.cpp.o.provides.build: json/json/CM
 
 json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o: json/json/src/JSONChildren.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONChildren.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONChildren.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONChildren.cpp.o -c /Developer/BoxGL/json/json/src/JSONChildren.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONChildren.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONChildren.cpp > CMakeFiles/json.dir/src/JSONChildren.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONChildren.cpp > CMakeFiles/json.dir/src/JSONChildren.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONChildren.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONChildren.cpp -o CMakeFiles/json.dir/src/JSONChildren.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONChildren.cpp -o CMakeFiles/json.dir/src/JSONChildren.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o.requires
@@ -123,17 +123,17 @@ json/json/CMakeFiles/json.dir/src/JSONChildren.cpp.o.provides.build: json/json/C
 
 json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o: json/json/src/JSONDebug.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONDebug.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONDebug.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONDebug.cpp.o -c /Developer/BoxGL/json/json/src/JSONDebug.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONDebug.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONDebug.cpp > CMakeFiles/json.dir/src/JSONDebug.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONDebug.cpp > CMakeFiles/json.dir/src/JSONDebug.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONDebug.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONDebug.cpp -o CMakeFiles/json.dir/src/JSONDebug.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONDebug.cpp -o CMakeFiles/json.dir/src/JSONDebug.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o.requires
@@ -146,17 +146,17 @@ json/json/CMakeFiles/json.dir/src/JSONDebug.cpp.o.provides.build: json/json/CMak
 
 json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o: json/json/src/JSONIterators.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONIterators.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONIterators.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONIterators.cpp.o -c /Developer/BoxGL/json/json/src/JSONIterators.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONIterators.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONIterators.cpp > CMakeFiles/json.dir/src/JSONIterators.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONIterators.cpp > CMakeFiles/json.dir/src/JSONIterators.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONIterators.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONIterators.cpp -o CMakeFiles/json.dir/src/JSONIterators.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONIterators.cpp -o CMakeFiles/json.dir/src/JSONIterators.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o.requires
@@ -169,17 +169,17 @@ json/json/CMakeFiles/json.dir/src/JSONIterators.cpp.o.provides.build: json/json/
 
 json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o: json/json/src/JSONMemory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONMemory.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONMemory.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONMemory.cpp.o -c /Developer/BoxGL/json/json/src/JSONMemory.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONMemory.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONMemory.cpp > CMakeFiles/json.dir/src/JSONMemory.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONMemory.cpp > CMakeFiles/json.dir/src/JSONMemory.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONMemory.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONMemory.cpp -o CMakeFiles/json.dir/src/JSONMemory.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONMemory.cpp -o CMakeFiles/json.dir/src/JSONMemory.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o.requires
@@ -192,17 +192,17 @@ json/json/CMakeFiles/json.dir/src/JSONMemory.cpp.o.provides.build: json/json/CMa
 
 json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o: json/json/src/JSONNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONNode.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONNode.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONNode.cpp.o -c /Developer/BoxGL/json/json/src/JSONNode.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONNode.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONNode.cpp > CMakeFiles/json.dir/src/JSONNode.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONNode.cpp > CMakeFiles/json.dir/src/JSONNode.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONNode.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONNode.cpp -o CMakeFiles/json.dir/src/JSONNode.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONNode.cpp -o CMakeFiles/json.dir/src/JSONNode.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o.requires
@@ -215,17 +215,17 @@ json/json/CMakeFiles/json.dir/src/JSONNode.cpp.o.provides.build: json/json/CMake
 
 json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o: json/json/src/JSONNode_Mutex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONNode_Mutex.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o -c /Developer/BoxGL/json/json/src/JSONNode_Mutex.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONNode_Mutex.cpp > CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONNode_Mutex.cpp > CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONNode_Mutex.cpp -o CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONNode_Mutex.cpp -o CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o.requires
@@ -238,17 +238,17 @@ json/json/CMakeFiles/json.dir/src/JSONNode_Mutex.cpp.o.provides.build: json/json
 
 json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o: json/json/src/JSONStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONStream.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONStream.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONStream.cpp.o -c /Developer/BoxGL/json/json/src/JSONStream.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONStream.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONStream.cpp > CMakeFiles/json.dir/src/JSONStream.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONStream.cpp > CMakeFiles/json.dir/src/JSONStream.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONStream.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONStream.cpp -o CMakeFiles/json.dir/src/JSONStream.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONStream.cpp -o CMakeFiles/json.dir/src/JSONStream.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o.requires
@@ -261,17 +261,17 @@ json/json/CMakeFiles/json.dir/src/JSONStream.cpp.o.provides.build: json/json/CMa
 
 json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o: json/json/src/JSONValidator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONValidator.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONValidator.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONValidator.cpp.o -c /Developer/BoxGL/json/json/src/JSONValidator.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONValidator.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONValidator.cpp > CMakeFiles/json.dir/src/JSONValidator.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONValidator.cpp > CMakeFiles/json.dir/src/JSONValidator.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONValidator.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONValidator.cpp -o CMakeFiles/json.dir/src/JSONValidator.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONValidator.cpp -o CMakeFiles/json.dir/src/JSONValidator.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o.requires
@@ -284,17 +284,17 @@ json/json/CMakeFiles/json.dir/src/JSONValidator.cpp.o.provides.build: json/json/
 
 json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o: json/json/src/JSONWorker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONWorker.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONWorker.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONWorker.cpp.o -c /Developer/BoxGL/json/json/src/JSONWorker.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONWorker.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONWorker.cpp > CMakeFiles/json.dir/src/JSONWorker.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONWorker.cpp > CMakeFiles/json.dir/src/JSONWorker.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONWorker.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONWorker.cpp -o CMakeFiles/json.dir/src/JSONWorker.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONWorker.cpp -o CMakeFiles/json.dir/src/JSONWorker.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o.requires
@@ -307,17 +307,17 @@ json/json/CMakeFiles/json.dir/src/JSONWorker.cpp.o.provides.build: json/json/CMa
 
 json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o: json/json/src/JSONWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONWriter.cpp.o -c /Users/SV/BoxGL/json/json/src/JSONWriter.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/JSONWriter.cpp.o -c /Developer/BoxGL/json/json/src/JSONWriter.cpp
 
 json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/JSONWriter.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/JSONWriter.cpp > CMakeFiles/json.dir/src/JSONWriter.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/JSONWriter.cpp > CMakeFiles/json.dir/src/JSONWriter.cpp.i
 
 json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/JSONWriter.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/JSONWriter.cpp -o CMakeFiles/json.dir/src/JSONWriter.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/JSONWriter.cpp -o CMakeFiles/json.dir/src/JSONWriter.cpp.s
 
 json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o.requires
@@ -330,17 +330,17 @@ json/json/CMakeFiles/json.dir/src/JSONWriter.cpp.o.provides.build: json/json/CMa
 
 json/json/CMakeFiles/json.dir/src/libjson.cpp.o: json/json/CMakeFiles/json.dir/flags.make
 json/json/CMakeFiles/json.dir/src/libjson.cpp.o: json/json/src/libjson.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/SV/BoxGL/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Developer/BoxGL/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object json/json/CMakeFiles/json.dir/src/libjson.cpp.o"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/libjson.cpp.o -c /Users/SV/BoxGL/json/json/src/libjson.cpp
+	cd /Developer/BoxGL/json/json && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/libjson.cpp.o -c /Developer/BoxGL/json/json/src/libjson.cpp
 
 json/json/CMakeFiles/json.dir/src/libjson.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/libjson.cpp.i"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/SV/BoxGL/json/json/src/libjson.cpp > CMakeFiles/json.dir/src/libjson.cpp.i
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Developer/BoxGL/json/json/src/libjson.cpp > CMakeFiles/json.dir/src/libjson.cpp.i
 
 json/json/CMakeFiles/json.dir/src/libjson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/libjson.cpp.s"
-	cd /Users/SV/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/SV/BoxGL/json/json/src/libjson.cpp -o CMakeFiles/json.dir/src/libjson.cpp.s
+	cd /Developer/BoxGL/json/json && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Developer/BoxGL/json/json/src/libjson.cpp -o CMakeFiles/json.dir/src/libjson.cpp.s
 
 json/json/CMakeFiles/json.dir/src/libjson.cpp.o.requires:
 .PHONY : json/json/CMakeFiles/json.dir/src/libjson.cpp.o.requires
@@ -386,8 +386,8 @@ json/json/libjson.a: json/json/CMakeFiles/json.dir/src/libjson.cpp.o
 json/json/libjson.a: json/json/CMakeFiles/json.dir/build.make
 json/json/libjson.a: json/json/CMakeFiles/json.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libjson.a"
-	cd /Users/SV/BoxGL/json/json && $(CMAKE_COMMAND) -P CMakeFiles/json.dir/cmake_clean_target.cmake
-	cd /Users/SV/BoxGL/json/json && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/json.dir/link.txt --verbose=$(VERBOSE)
+	cd /Developer/BoxGL/json/json && $(CMAKE_COMMAND) -P CMakeFiles/json.dir/cmake_clean_target.cmake
+	cd /Developer/BoxGL/json/json && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/json.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 json/json/CMakeFiles/json.dir/build: json/json/libjson.a
@@ -409,10 +409,10 @@ json/json/CMakeFiles/json.dir/requires: json/json/CMakeFiles/json.dir/src/libjso
 .PHONY : json/json/CMakeFiles/json.dir/requires
 
 json/json/CMakeFiles/json.dir/clean:
-	cd /Users/SV/BoxGL/json/json && $(CMAKE_COMMAND) -P CMakeFiles/json.dir/cmake_clean.cmake
+	cd /Developer/BoxGL/json/json && $(CMAKE_COMMAND) -P CMakeFiles/json.dir/cmake_clean.cmake
 .PHONY : json/json/CMakeFiles/json.dir/clean
 
 json/json/CMakeFiles/json.dir/depend:
-	cd /Users/SV/BoxGL && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/SV/BoxGL /Users/SV/BoxGL/json/json /Users/SV/BoxGL /Users/SV/BoxGL/json/json /Users/SV/BoxGL/json/json/CMakeFiles/json.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Developer/BoxGL && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Developer/BoxGL /Developer/BoxGL/json/json /Developer/BoxGL /Developer/BoxGL/json/json /Developer/BoxGL/json/json/CMakeFiles/json.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : json/json/CMakeFiles/json.dir/depend
 

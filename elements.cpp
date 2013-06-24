@@ -3,7 +3,7 @@ using namespace std;
 
 void load_json(const char* name)
 {
-	std::ifstream stream;
+	/*std::ifstream stream;
 	stream.open("elements.json",ifstream::in);
 	std::string line,buffer;
 	if(stream.is_open()){
@@ -19,5 +19,5 @@ void load_json(const char* name)
 		if(i == JSON_NULL) break;
 		else if(json_type(*i) == JSON_NODE) continue;
 		printf("%s",json_name(*i)); i++;
-	}
+	}*/
 }

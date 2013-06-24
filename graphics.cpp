@@ -3,38 +3,34 @@
 #include "elements.h"
 #include "utils.h"
 
-int main_window,counter = 0;
+GLFWwindow* window;
 int width = 800;
 int height = 600;
+int counter = 0;
+
 bool direction = true;
-float x = 0.005f;
+float x = 0.0005f;
 float y = 0.0f;
 float z = 0.0f;
 
-void reshape(int w, int h)
+void reshape(int w,int h)
 {
-    width = w;
-    height = h;
-    glViewport (0, 0, (GLsizei) w, (GLsizei) h);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(-1, 1, -1, 1, -1, 1);
-    glLoadIdentity();
+	if (w == width && h == height) 
+		glfwGetWindowSize(window,&width,&height);
+	else glfwSetWindowSize(window,w,h);
+	glViewport(0,0,(GLsizei)w,(GLsizei)h);
 }
 
 void define_direction()
 {
     world.Step(timeStep,1, positionIterations);
     b2Vec2 position = body->GetPosition();
-    //printf("%3.2f - %3.2f",position.x,position.y);
     if(direction){ 
         x = 0.001f*position.x;
         y = 0.001f*position.y;
-		//z = 0.001f;
     }else{
         x = -0.001f*position.x;
         y = -0.001f*position.y;
-		//z = -0.001f;
     }
     counter = 0;
     direction = !direction;
@@ -56,51 +52,48 @@ void display ( void )
     counter++;
     if(counter == 1000) define_direction();
     glFlush();
-    //glutSwapBuffers();
 }
 
-void idle()
+void initGL(int argc,char** argv)
 {
-    /*static int prev_time = glutGet(GLUT_ELAPSED_TIME);
-    int curr_time = glutGet(GLUT_ELAPSED_TIME);
-    int elapsed_time = curr_time - prev_time;
-    prev_time = curr_time;
-    glutPostRedisplay();*/
-}
-
-void initGL(void)
-{
+	if(argc > 2) reshape(atoi(argv[1]),atoi(argv[2]));
     glClear(GL_COLOR_BUFFER_BIT);
     glClearColor(0,0,0,0);
     glShadeModel(GL_SMOOTH);
-    glEnable (GL_BLEND);
-    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     glOrtho(-1,1,-1,1,-1,1);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glColor3f(0.5,0.5,0.5);
 }
 
-void initGLUT(int argc, char** argv)
+void initGLFW(char* n)
 {
-    /*glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH | GLUT_STENCIL); // display mode
-    glutInitWindowSize(width,height);
-    glutInitWindowPosition(0,0);
-    main_window = glutCreateWindow("BoxGL");
-    glutDisplayFunc(display);
-    glutIdleFunc(idle);
-    glutReshapeFunc(reshape);*/
+	glfwInit(); window = 
+	glfwCreateWindow(width,height,n,NULL,NULL);
+    glfwMakeContextCurrent(window);
+}	
+
+int mainLoop()
+{
+	while(!glfwWindowShouldClose(window)){
+		display();
+		glfwPollEvents();
+        glfwSwapBuffers(window);
+		reshape(width,height);
+    }
+    glfwTerminate();
+    return 0;
 }
 
 int start_engine(int argc, char** argv)
 {
+	char name[6] = "BoxGL";
     srand(time(0));
-    //initGLUT(argc, argv);
-    initGL();
     initBOX2D(&world);
-    //glutMainLoop();
-    return 0;
+	initGLFW(name);
+	initGL(argc,argv);
+    return mainLoop();
 }
