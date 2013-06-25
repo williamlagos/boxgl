@@ -6,11 +6,10 @@
 #define PRESS(X) key == X && action == GLFW_PRESS
 
 GLFWwindow* window;
-int width = 800;
-int height = 600;
-float x = 0.0f;
-float y = 0.0f;
-float z = 1.0f;
+int width = 800, height = 600;
+float x = 0.01f, y = -0.01f, z = 0.02f;
+float cZ = 0.0f, cY = 0.0f, cX = 0.0f; 
+float uZ = 0.0f, uY = 1.0f, uX = 0.0f;
 
 void reshape(int w,int h)
 {
@@ -20,31 +19,49 @@ void reshape(int w,int h)
 	glViewport(0,0,(GLsizei)w,(GLsizei)h);
 }
 
+void animate_wave()
+{
+	float size = 0.8f;
+	float depth = 0.125f;
+	float wave = 0.1f*(float)glfwGetTime();
+	for(float i = size-.1f; i > 0.0f; i -= .1f) {
+		glTranslatef(0.0f,0.0f,-wave*i);
+		glBegin(GL_POLYGON); glColor3f(1.0,i,0.0);     
+		glVertex3f( i,-i,-depth/-i); glVertex3f( i, i,-depth/-i);
+		glVertex3f(-i, i,-depth/-i); glVertex3f(-i,-i,-depth/-i);
+		glEnd();
+	}
+}
+
 void draw_cube()
 {
-	glBegin(GL_POLYGON); glColor3f( 1.0, 0.5, 0.0 );     
-	  glVertex3f(  0.5, -0.5, -0.5 ); glVertex3f(  0.5,  0.5, -0.5 );
-	  glVertex3f( -0.5,  0.5, -0.5 ); glVertex3f( -0.5, -0.5, -0.5 );
+	float depth = 0.125f;
+	float size = 0.8f;
+	
+	glBegin(GL_POLYGON); glColor3f(1.0,0.9,0.0);     
+	  glVertex3f(  size, -size, -depth ); glVertex3f(  size,  size, -depth );
+	  glVertex3f( -size,  size, -depth ); glVertex3f( -size, -size, -depth );
 	glEnd();
-	glBegin(GL_POLYGON); glColor3f(1.0,  1.0, 1.0 );
-	  glVertex3f(  0.5, -0.5, 0.5 );	glVertex3f(  0.5,  0.5, 0.5 );
-	  glVertex3f( -0.5,  0.5, 0.5 );	glVertex3f( -0.5, -0.5, 0.5 );
+	
+	glBegin(GL_POLYGON); glColor3f(1.0,0.5,1.0);
+	  glVertex3f(  size, -size, depth );	glVertex3f(  size,  size, depth );
+	  glVertex3f( -size,  size, depth );	glVertex3f( -size, -size, depth );
 	glEnd();
-	glBegin(GL_POLYGON); glColor3f(  1.0,  0.0,  1.0 );
-	  glVertex3f( 0.5, -0.5, -0.5 );	glVertex3f( 0.5,  0.5, -0.5 );
-	  glVertex3f( 0.5,  0.5,  0.5 );	glVertex3f( 0.5, -0.5,  0.5 );
+	glBegin(GL_POLYGON); glColor3f(1.0,0.0,1.0);
+	  glVertex3f( size, -size, -depth );	glVertex3f( size,  size, -depth );
+	  glVertex3f( size,  size,  depth );	glVertex3f( size, -size,  depth );
 	glEnd();
-	glBegin(GL_POLYGON); glColor3f(   0.0,  1.0,  0.0 );
-	  glVertex3f( -0.5, -0.5,  0.5 );	glVertex3f( -0.5,  0.5,  0.5 );
-	  glVertex3f( -0.5,  0.5, -0.5 );	glVertex3f( -0.5, -0.5, -0.5 );
+	glBegin(GL_POLYGON); glColor3f(0.0,1.0,0.0);
+	  glVertex3f( -size, -size,  depth );	glVertex3f( -size,  size,  depth );
+	  glVertex3f( -size,  size, -depth );	glVertex3f( -size, -size, -depth );
 	glEnd();
-	glBegin(GL_POLYGON); glColor3f(   0.0,  0.0,  1.0 );
-	  glVertex3f(  0.5,  0.5,  0.5 );	glVertex3f(  0.5,  0.5, -0.5 );
-	  glVertex3f( -0.5,  0.5, -0.5 );	glVertex3f( -0.5,  0.5,  0.5 );
+	glBegin(GL_POLYGON); glColor3f(0.0,0.0,1.0);
+	  glVertex3f(  size,  size,  depth );	glVertex3f(  size,  size, -depth );
+	  glVertex3f( -size,  size, -depth );	glVertex3f( -size,  size,  depth );
 	glEnd();
-	glBegin(GL_POLYGON); glColor3f(   1.0,  0.0,  0.0 );
-	  glVertex3f(  0.5, -0.5, -0.5 );	glVertex3f(  0.5, -0.5,  0.5 );
-	  glVertex3f( -0.5, -0.5,  0.5 );	glVertex3f( -0.5, -0.5, -0.5 );
+	glBegin(GL_POLYGON); glColor3f(1.0,0.0,0.0);
+	  glVertex3f(  size, -size, -depth );	glVertex3f(  size, -size,  depth );
+	  glVertex3f( -size, -size,  depth );	glVertex3f( -size, -size, -depth );
 	glEnd();
 }
 
@@ -58,7 +75,6 @@ void draw_grid(void)
 			// Colunas da matriz
 			glVertex3f(x,y,0.0);  glVertex3f(-x,y,0.0);
 			glVertex3f(x,-y,0.0); glVertex3f(-x,-y,0.0);
-			
 			// Linhas da matriz
 			glVertex3f(x,y,0.0);  glVertex3f(x,-y,0.0);
 			glVertex3f(-x,y,0.0); glVertex3f(-x,-y,0.0);
@@ -75,27 +91,32 @@ void draw_orthogrid(void)
 	glBegin(GL_LINES);
 	for(x=xmin; x<=xmax; x+=dx){
 		for(y=ymin; y<=ymax; y+=dy){
-			glVertex3f(x, ymin, 0.0);
-			glVertex3f(x, ymax, 0.0);
-			glVertex3f(xmin, y, 0.0);
-			glVertex3f(xmax, y, 0.0);
+			glVertex3f(x,ymin, 0.0);
+			glVertex3f(x,ymax, 0.0);
+			glVertex3f(xmin,y, 0.0);
+			glVertex3f(xmax,y, 0.0);
 		}
 	}
 	glEnd();
 }
 
-void initGL()
+float video_ratio()
 {
-	float ratio;
 	int width, height;
 	glfwGetFramebufferSize(window, &width, &height);
-	ratio = width / (float) height;
+	return width / (float) height;
+}
+
+void initGL()
+{
+	float ratio = video_ratio();
+	glDisable(GL_CULL_FACE);
+	glEnable(GL_DEPTH_TEST);
 	glViewport(0, 0, width, height);
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	//2D Mode
-	//glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
+	glOrtho(-ratio,ratio,-1.f,1.f,1.f,-1.f);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 }
@@ -122,12 +143,27 @@ void key_callback(GLFWwindow* window,int key,int scancode,int action,int mods)
 {
     if(PRESS(GLFW_KEY_ESCAPE))
         glfwSetWindowShouldClose(window,GL_TRUE);
-	else if(PRESS(GLFW_KEY_UP)) z += 0.1f;
-	else if(PRESS(GLFW_KEY_DOWN)) z -= 0.1f;
-	else if(PRESS(GLFW_KEY_LEFT)) y += 0.1f;
-	else if(PRESS(GLFW_KEY_RIGHT)) y -= 0.1f;
-	else if(PRESS(GLFW_KEY_LEFT_ALT)) x += 0.1f;
-	else if(PRESS(GLFW_KEY_RIGHT_ALT)) x -= 0.1f;
+	// Visao ocular da camera
+	else if(PRESS(GLFW_KEY_W)) z += 0.01f;
+	else if(PRESS(GLFW_KEY_S)) z -= 0.01f;
+	else if(PRESS(GLFW_KEY_A)) y += 0.01f;
+	else if(PRESS(GLFW_KEY_D)) y -= 0.01f;
+	else if(PRESS(GLFW_KEY_Q)) x += 0.01f;
+	else if(PRESS(GLFW_KEY_E)) x -= 0.01f;
+	// Visao pela altura da camera
+	else if(PRESS(GLFW_KEY_I)) uX += 0.01f;
+	else if(PRESS(GLFW_KEY_K)) uX -= 0.01f;
+	else if(PRESS(GLFW_KEY_J)) uY += 0.01f;
+	else if(PRESS(GLFW_KEY_L)) uY -= 0.01f;
+	else if(PRESS(GLFW_KEY_U)) uZ += 0.01f;
+	else if(PRESS(GLFW_KEY_O)) uZ -= 0.01f;
+	// Visao pelo centro de referencia
+	else if(PRESS(GLFW_KEY_Z)) cX += 0.01f;
+	else if(PRESS(GLFW_KEY_M)) cX -= 0.01f;
+	else if(PRESS(GLFW_KEY_X)) cY += 0.01f;
+	else if(PRESS(GLFW_KEY_N)) cY -= 0.01f;
+	else if(PRESS(GLFW_KEY_C)) cZ += 0.01f;
+	else if(PRESS(GLFW_KEY_B)) cZ -= 0.01f;
 }
 
 void initGLFW(char* n,int argc,char** argv)
@@ -136,6 +172,7 @@ void initGLFW(char* n,int argc,char** argv)
 	glfwCreateWindow(width,height,n,NULL,NULL);
     glfwMakeContextCurrent(window);
 	glfwSetKeyCallback(window,key_callback);
+	glfwSetInputMode(window,GLFW_STICKY_KEYS,GL_TRUE);
 	if(argc > 2) reshape(atoi(argv[1]),atoi(argv[2]));
 }
 
@@ -143,11 +180,13 @@ void glfwMainLoop()
 {
 	while(!glfwWindowShouldClose(window)){
 		initGL();
-		gluLookAt(x,y,z,0.0,0.0,0.0,0.0,1.0,0.0);
+		float ratio = video_ratio();
+		gluLookAt(x,y,z,cX,cY,cZ,uX,uY,uZ);
+		
 		draw_grid();
 		draw_cube();
 		glPushMatrix();
-		animate_triangle();
+		animate_wave();
 		glPopMatrix();
 		
 		glfwPollEvents();
