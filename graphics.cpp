@@ -21,52 +21,38 @@ void reshape(int w,int h)
 	glViewport(0,0,(GLsizei)w,(GLsizei)h);
 }
 
-void define_direction()
+void draw_grid(void)
 {
-    world.Step(timeStep,1, positionIterations);
-    b2Vec2 position = body->GetPosition();
-    if(direction){ 
-        x = 0.001f*position.x;
-        y = 0.001f*position.y;
-    }else{
-        x = -0.001f*position.x;
-        y = -0.001f*position.y;
-    }
-    counter = 0;
-    direction = !direction;
-}
-
-void display ( void )
-{
-    //load_json("elements.json");
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-    glTranslatef(x,y,z);  
     glColor3f(0.7,0.3,0.5); 
     glPointSize(10.0);
-    glBegin(GL_QUADS);
-	  glVertex3f(-0.9f,0.9f,0.0f);
-      glVertex3f(0.9f,0.9f,0.0f);
-      glVertex3f(0.9f,-0.9f,0.0f);
-      glVertex3f(-0.9f,-0.9f,0.0f);
-    glEnd();
-    counter++;
-    if(counter == 1000) define_direction();
-    glFlush();
+    glColor3f(0.1,0.1,0.9); 	
+	float xmin=-50.0, xmax=50.0, dx=5.0, x;
+	float ymin=-50.0, ymax=50.0, dy=5.0, y;
+	glBegin(GL_LINES);
+	for(x=xmin; x<=xmax; x+=dx){
+		for(y=ymin; y<=ymax; y+=dy){
+			glVertex3f(x, ymin, 0.0);
+			glVertex3f(x, ymax, 0.0);
+			glVertex3f(xmin, y, 0.0);
+			glVertex3f(xmax, y, 0.0);
+		}
+	}
+	glEnd();
 }
 
-void initGL(int argc,char** argv)
+void initGL()
 {
-	if(argc > 2) reshape(atoi(argv[1]),atoi(argv[2]));
-    glClear(GL_COLOR_BUFFER_BIT);
-    glClearColor(0,0,0,0);
-    glShadeModel(GL_SMOOTH);
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(-1,1,-1,1,-1,1);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
+	float ratio;
+	int width, height;
+	glfwGetFramebufferSize(window, &width, &height);
+	ratio = width / (float) height;
+	glViewport(0, 0, width, height);
+	glClear(GL_COLOR_BUFFER_BIT);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 }
 
 void initGLFW(char* n)
@@ -76,24 +62,45 @@ void initGLFW(char* n)
     glfwMakeContextCurrent(window);
 }	
 
+void colorful_triangle()
+{
+	glBegin(GL_TRIANGLES);
+	glColor3f(1.f, 0.f, 0.f);
+	glVertex3f(-0.6f, -0.4f, 0.f);
+	glColor3f(0.f, 1.f, 0.f);
+	glVertex3f(0.6f, -0.4f, 0.f);
+	glColor3f(0.f, 0.f, 1.f);
+	glVertex3f(0.f, 0.6f, 0.f);
+	glEnd();
+}
+
+void animate_triangle()
+{
+	glRotatef((float) glfwGetTime() * 50.f, 0.f, 0.f, 1.f);
+	colorful_triangle();
+}
+
 int mainLoop()
 {
-	while(!glfwWindowShouldClose(window)){
-		display();
-		glfwPollEvents();
-        glfwSwapBuffers(window);
-		reshape(width,height);
-    }
-    glfwTerminate();
-    return 0;
+	initGL();
+	
+	draw_grid();
+	glPushMatrix();
+	animate_triangle();
+	glPopMatrix();
+	
+	glfwPollEvents();
+	glfwSwapBuffers(window);
+	reshape(width,height);
 }
 
 int start_engine(int argc, char** argv)
 {
 	char name[6] = "BoxGL";
-    srand(time(0));
-    initBOX2D(&world);
+	//initBOX2D(&world);
 	initGLFW(name);
-	initGL(argc,argv);
-    return mainLoop();
+	if(argc > 2) reshape(atoi(argv[1]),atoi(argv[2]));
+	while(!glfwWindowShouldClose(window)) mainLoop();
+    glfwTerminate();
+    return 0;
 }
