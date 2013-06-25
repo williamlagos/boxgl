@@ -1,27 +1,18 @@
 #include "elements.h"
 using namespace std;
 
-typedef struct {
-	float mass;
-	float kmol;
-	int coordx;
-	int coordy;
-	int newtons;
-	int deltatm;
-} Mesh;
-
-void deformation_matrix(int cols,int rows)
+void deformation_matrix(Mesh matrix[100][100])
 {
-	Mesh mesh[cols][rows];
-	for(int i = 0; i < cols; i++){
-		for(int j = 0; j < rows; j++){
-			Mesh m = mesh[i][j];
+	for(int i = 0; i < 100; i++){
+		for(int j = 0; j < 100; j++){
+			Mesh m;
 			m.mass = 1.0;
-			m.kmol = 1.5;
+			m.kmol = 1.0;
 			m.coordx = i;
 			m.coordy = j;
 			m.newtons = 1;
 			m.deltatm = 1;
+			matrix[i][j] = m;
 		}
 	}
 }

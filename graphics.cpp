@@ -5,6 +5,7 @@
 
 #define PRESS(X) key == X && action == GLFW_PRESS
 
+Mesh matrix[100][100];
 GLFWwindow* window;
 int width = 800, height = 600;
 float x = 0.01f, y = -0.01f, z = 0.02f;
@@ -19,17 +20,23 @@ void reshape(int w,int h)
 	glViewport(0,0,(GLsizei)w,(GLsizei)h);
 }
 
-void animate_wave()
+void animate_wave(int detail)
 {
-	float size = 0.8f;
-	float depth = 0.125f;
-	float wave = 0.1f*(float)glfwGetTime();
-	for(float i = size-.1f; i > 0.0f; i -= .1f) {
+	float i = .79f;
+	float wave = .1f/(float)glfwGetTime();
+	for(int count = 0; count < 100; count++){
 		glTranslatef(0.0f,0.0f,-wave*i);
 		glBegin(GL_POLYGON); glColor3f(1.0,i,0.0);     
-		glVertex3f( i,-i,-depth/-i); glVertex3f( i, i,-depth/-i);
-		glVertex3f(-i, i,-depth/-i); glVertex3f(-i,-i,-depth/-i);
+		glVertex3f( i,-i,-.125f/i); glVertex3f( i, i,-.125f/i);
+		glVertex3f(-i, i,-.125f/i); glVertex3f(-i,-i,-.125f/i);
 		glEnd();
+		i -= .01f;
+		for(int aux = 0; aux < 100; aux++){
+			i *= matrix[count][aux].mass;
+			i *= matrix[count][aux].newtons;
+			wave /= matrix[count][aux].deltatm;
+			wave /= matrix[count][aux].kmol;
+		}
 	}
 }
 
@@ -180,13 +187,12 @@ void glfwMainLoop()
 {
 	while(!glfwWindowShouldClose(window)){
 		initGL();
-		float ratio = video_ratio();
 		gluLookAt(x,y,z,cX,cY,cZ,uX,uY,uZ);
 		
 		draw_grid();
 		draw_cube();
 		glPushMatrix();
-		animate_wave();
+		animate_wave(100);
 		glPopMatrix();
 		
 		glfwPollEvents();
@@ -199,7 +205,7 @@ int start_engine(int argc, char** argv)
 {
 	char name[6] = "BoxGL";
 	//initBOX2D(&world);
-	deformation_matrix(10,10);
+	deformation_matrix(matrix);
 	initGLFW(name,argc,argv);
 	glfwMainLoop();
     glfwTerminate();
