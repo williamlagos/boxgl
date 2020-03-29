@@ -1,4 +1,4 @@
-boxgl
+dinamo
 =====
 
-An C++ boilerplate for developing with Box2D and OpenGL.
+An C++ boilerplate for developing with Cocos2d-x.
